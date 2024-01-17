@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.mindera.users;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,9 +8,9 @@ import java.util.List;
 
 @SpringBootApplication
 @RestController
-public class DemoApplication {
+public class UsersApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(UsersApplication.class, args);
 	}
 	@Autowired
 	private UsersService usersService;

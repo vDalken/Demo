@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.mindera.users;
 
 public class User {
     private Integer id;

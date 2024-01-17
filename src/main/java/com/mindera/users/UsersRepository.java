@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.mindera.users;
 
 import java.util.List;
 
