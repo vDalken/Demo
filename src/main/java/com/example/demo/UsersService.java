@@ -34,19 +34,12 @@ public class UsersService implements UsersRepository {
     }
 
     @Override
-    public User updateUser(User user) {
-        return users
-                .stream()
-                .filter(userList -> userList.getId().equals(user.getId()))
-                .map(userList -> user)
-                .findFirst()
-                .orElse(null);
+    public void updateUser(User user) {
+       users.set(users.lastIndexOf(user),user);
     }
 
     @Override
     public void deleteUser(User user) {
-        users = users
-                .stream()
-                .filter(userList -> userList.getId()!=user.getId()).toList();
+        users.remove(user);
     }
 }

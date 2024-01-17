@@ -31,8 +31,8 @@ public class DemoApplication {
 	}
 
 	@PutMapping
-	public User updateUser(@RequestBody User user) {
-		return usersService.updateUser(user);
+	public void updateUser(@RequestBody User user) {
+		usersService.updateUser(user);
 	}
 
 	@DeleteMapping
